@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "init": "npm install",
+    "release": "npm publish --access=publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ken",
