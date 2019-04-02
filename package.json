@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-nufront",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "GD-NUFRONT eslint config for Vue projects.",
   "main": "index.js",
   "scripts": {
