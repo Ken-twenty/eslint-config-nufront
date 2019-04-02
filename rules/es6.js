@@ -123,11 +123,7 @@ module.exports = {
     'rest-spread-spacing': ['error', 'never'],
 
     // 强制要求 import 排序
-    'sort-imports': ['error', {
-      ignoreCase: false,
-      ignoreMemberSort: true,
-      memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
-    }],
+    'sort-imports': 'off',
 
     // 强制要求 symbol 描述
     'symbol-description': 'error',
