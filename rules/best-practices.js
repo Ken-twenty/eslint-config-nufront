@@ -28,8 +28,8 @@ module.exports = {
     // 强制在点号之前或之后一致的换行 （之前）
     'dot-location': ['error', 'property'],
 
-    // 强制使用点号调用对象成员，关键字除外
-    'dot-notation': ['error', { allowKeywords: false }],
+    // 强制使用点号调用对象成员
+    'dot-notation': 'error',
 
     // 强制使用 === 和 !== （null 除外）
     'eqeqeq': [
@@ -144,14 +144,8 @@ module.exports = {
     // 禁止在字符串中使用八进制转义序列
     'no-octal-escape': 'error',
 
-    // 禁止对函数参数再赋值
-    'no-param-reassign': [
-      'error',
-      {
-        props: true,
-        ignorePropertyModificationsFor: [],
-      },
-    ],
+    // 禁止对函数参数再赋值，props 除外
+    'no-param-reassign': ['error', { props: false }],
 
     // 禁止使用 __proto__ 属性
     'no-proto': 'error',
