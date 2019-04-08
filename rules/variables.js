@@ -22,15 +22,8 @@ module.exports = {
       'isNaN',
     ].concat(restrictedGlobals),
 
-    // 禁止变量声明与外层作用域的变量同名
-    'no-shadow': [
-      'error',
-      {
-        builtinGlobals: true,
-        hoist: 'all',
-        allow: [],
-      },
-    ],
+    // 禁止变量声明与外层作用域的变量同名 （对于函数参数过于严格）
+    'no-shadow': 'off',
 
     // 禁止重定义关键字
     'no-shadow-restricted-names': 'error',
@@ -44,7 +37,7 @@ module.exports = {
     // 禁止使用 undefined
     'no-undefined': 'off',
 
-    // 禁止出现未使用过的变量
+    // 禁止出现未使用过的变量 （只检验函数参数的最后一个）
     'no-unused-vars': [
       'error',
       {

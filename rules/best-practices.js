@@ -144,7 +144,7 @@ module.exports = {
     // 禁止在字符串中使用八进制转义序列
     'no-octal-escape': 'error',
 
-    // 禁止对函数参数再赋值，props 除外
+    // 禁止对函数参数再赋值 （props 除外）
     'no-param-reassign': ['error', { props: false }],
 
     // 禁止使用 __proto__ 属性
@@ -259,13 +259,7 @@ module.exports = {
     'no-void': 'error',
 
     // 禁用警告注释
-    'no-warning-comments': [
-      'error',
-      {
-        terms: ['todo', 'fixme'],
-        location: 'start',
-      },
-    ],
+    'no-warning-comments': 'off',
 
     // 禁止使用 with 语句
     'no-with': 'error',

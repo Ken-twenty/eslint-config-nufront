@@ -32,7 +32,7 @@ module.exports = {
       { allowSingleLine: true },
     ],
 
-    // 强制使用骆驼命名法
+    // 强制使用骆驼命名法 （需要直接使用 API 数据时过于严格）
     'camelcase': 'off',
 
     // 强制或禁止对注释的第一个字母大写
@@ -341,7 +341,7 @@ module.exports = {
     // 禁止使用 Object 构造函数
     'no-new-object': 'error',
 
-    // 禁止使用一元操作符 ++ 和 --，for 循环除外
+    // 禁止使用一元操作符 ++ 和 -- （for 循环除外）
     'no-plusplus': ['error', {"allowForLoopAfterthoughts": true}],
 
     // 禁止使用特定的语法
