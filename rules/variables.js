@@ -49,7 +49,7 @@ module.exports = {
       'error',
       {
         vars: 'all',
-        args: 'all',
+        args: 'after-used',
         ignoreRestSiblings: false,
         caughtErrors: 'none',
       },

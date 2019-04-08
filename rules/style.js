@@ -33,7 +33,7 @@ module.exports = {
     ],
 
     // 强制使用骆驼命名法
-    'camelcase': ['error', { properties: 'always' }],
+    'camelcase': 'off',
 
     // 强制或禁止对注释的第一个字母大写
     'capitalized-comments': 'off',
