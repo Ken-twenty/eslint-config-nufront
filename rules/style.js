@@ -201,7 +201,7 @@ module.exports = {
     'max-len': [
       'error',
       {
-        code: 100,
+        code: 120,
         tabWidth: 4,
         comments: 100,
         ignoreComments: false,
@@ -392,16 +392,16 @@ module.exports = {
       {
         ObjectExpression: {
           multiline: true,
-          minProperties: 3,
+          minProperties: 2,
         },
         ObjectPattern: 'always',
         ImportDeclaration: {
           multiline: true,
-          minProperties: 3,
+          minProperties: 2,
         },
         ExportDeclaration: {
           multiline: true,
-          minProperties: 3,
+          minProperties: 2,
         },
       },
     ],
